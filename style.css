@@ -1,0 +1,328 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+
+Main color: #087f5b
+Text color: #343a40
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+height: 100%;
+
+}
+
+body {
+height: 100%;
+font-family: sans-serif;
+line-height: 1;
+font-weight: 400;
+color: #e9ecef;
+
+margin-top: -400px;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    font-weight: 600;
+}
+
+h4{
+    font-weight: 600;
+}
+
+.whitespace{
+    height: 200px;
+    width: 100%;
+    display: flex;
+}
+
+.space-correction{
+    width: 100%;
+    display: grid;
+}
+
+.navbar{
+    transform: translate(0,60%);
+    padding-left: 25px;
+}
+
+.container{
+    max-width: 100vw;
+    padding: 0;
+}
+li.nav-item:not(:last-child) { 
+    margin-bottom: 36px;  
+ }
+
+.hero{
+    height: 100vh; 
+    background-image:url('hero-little.jpg');
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        url(hero-little.jpg);
+    background-size: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.hero--header{
+    font-size: 52px;
+    color: #fff;
+}
+
+.full--name{
+    font-size: 78px;
+}
+
+.skills{
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+}
+
+.navbar-background{
+    background-color: #495057;
+    /*background: linear-gradient(to right,#212529,rgba(255, 255, 255, 0.905));*/
+    width: 180px;
+}
+
+.skill--container{
+    padding:75px 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 6fr;
+    gap: 40px;
+    color: #343a40;
+}
+
+
+.front-end-icons, .back-end-icons{
+    padding: 20px 20px;
+    height: 100%;
+    /*box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.1);*/
+    border-radius: 12px;
+}
+
+.html--icon{
+    width: 125px;
+    max-height: 125px;
+}
+
+.icon-list{
+    padding: 10px 10px;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+}
+.front-end-header, .back-end-header{
+    font-size: 44px;
+    border-bottom: 3px solid #343a40;
+}
+
+.work-history{
+    height: 100vh;
+    display: flex;
+    
+}
+
+.work--container{
+    width: 100%;
+    padding:75px 40px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    color: #343a40;
+}
+
+.work--one, .work--two, .work--three, .work--four{
+    grid-column: 2/4;
+    border-left: 3px solid #343a40;
+}
+
+.work-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-html--icon{
+    width: 250px;
+}
+
+.future-company{
+    padding-left: 50px;
+    font-size: 64px;
+}
+
+.job--description{
+    padding-left: 25px;
+    line-height: 1.3;
+}
+.education{
+    height: 100vh;
+    display: flex;
+}
+
+.edu--container{
+    width: 100%;
+    padding:75px 40px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    color: #343a40;
+}
+
+.schooling{
+    grid-column: -1/1;
+    display: grid;
+    justify-items: center;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #343a40;
+}
+
+.edu-1-top{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.edu-1-bottom{
+    font-size: 18px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.edu-2-top{
+    font-size: 32px;
+    font-weight: 600;
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.edu-2-bottom{
+    font-size: 18px;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.edu--one, .edu--two, .edu--three, .edu--four{
+    grid-column: 1/3;
+    display: flex;
+    border-right: 3px solid #343a40;
+    justify-content: left;
+    padding-right: 50px;
+    line-height: 1.3;
+    
+    
+}
+
+.edu--icon{
+    display: flex;
+    align-items: center;
+}
+
+.html--icon-edu{
+    width: 120px;
+    padding-left: 30px;
+    gap: 30px;
+}
+
+.contact{
+    height: 100vh;
+    display: flex;
+}
+
+.contact--container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding:75px 40px;
+    color: #343a40;
+}
+
+.linked-in-contact, .github-contact, .resume-contact{
+    display: flex;
+    align-items:flex-end;
+    height: 100px;
+    border-bottom: 3px solid #343a40;
+    width: 25%;
+}
+
+.contact-link{
+    padding-bottom: 13px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.download-resume{
+    width: 48px;
+}
+
+.btn--download{
+    height: 48px;
+    background-color: #fff;
+    border: none;
+}
+
+.btn{
+    background-color: #fff;
+    min-height: 30px;
+    border-radius: 100px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-home:hover::after, .btn-skills:hover::after, .btn-work:hover::after, .btn-edu:hover::after, .btn-contact:hover::after{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-home:hover::after{
+    content: "Home";
+}
+
+.btn-skills:hover::after{
+    content: "Skills";
+}
+.btn-work:hover::after{
+    content: "Work";
+}
+.btn-edu:hover::after{
+    content: "Education";
+}
+
+.btn-contact:hover::after{
+    content: "Contact";
+}
+
+.btn-icon-home, .btn-icon-skills, .btn-icon-work, .btn-icon-edu, .btn-icon-contact{
+    width: 36px;
+}
+
